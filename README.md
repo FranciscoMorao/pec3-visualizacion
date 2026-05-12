@@ -1,5 +1,7 @@
 # Hotel Booking Cancellations Dashboard
 
+![Dashboard Preview](dashboard.png)
+
 Visualización narrativa interactiva sobre patrones de cancelación hotelera utilizando HTML, CSS, JavaScript y Chart.js.
 
 ## Objetivo
