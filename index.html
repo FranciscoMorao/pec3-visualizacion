@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Cancelaciones hoteleras: visualización narrativa de datos</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<section class="hero">
+  <div>
+    <h1>La epidemia de las cancelaciones hoteleras</h1>
+    <p>¿Qué reservas tienen más riesgo de desaparecer antes de la llegada?</p>
+    <span>↓ Scroll para descubrir los patrones</span>
+  </div>
+</section>
+
+<section class="story intro">
+  <h2>Una de cada tres reservas se cancela</h2>
+
+  <p>
+    El conjunto de datos contiene 119.390 reservas hoteleras de dos hoteles portugueses.
+    De ellas, 44.224 fueron canceladas, lo que representa una tasa de cancelación del 37%.
+  </p>
+
+  <div class="kpi-container">
+    <div class="kpi">
+      <strong>119.390</strong>
+      <span>reservas totales</span>
+    </div>
+
+    <div class="kpi danger">
+      <strong>37%</strong>
+      <span>canceladas</span>
+    </div>
+
+    <div class="kpi">
+      <strong>44.224</strong>
+      <span>cancelaciones</span>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <h2>Metodología</h2>
+
+  <p>
+    El análisis se realizó a partir del dataset Hotel Booking Demand,
+    utilizando técnicas de exploración de datos y visualización descriptiva
+    para identificar patrones asociados a la cancelación de reservas.
+  </p>
+
+  <ul>
+    <li>Limpieza y preparación de los datos.</li>
+    <li>Cálculo de tasas de cancelación por categoría.</li>
+    <li>Agrupación por tipo de hotel, antelación, canal de reserva y tipo de cliente.</li>
+    <li>Visualización interactiva mediante HTML, CSS, JavaScript y Chart.js.</li>
+  </ul>
+</section>
+
+<section class="story">
+  <h2>El hotel urbano concentra más riesgo</h2>
+
+  <p>
+    La tasa de cancelación es mayor en el City Hotel que en el Resort Hotel.
+    Esto sugiere que el contexto urbano puede estar asociado a reservas más flexibles.
+  </p>
+
+  <canvas id="hotelChart"></canvas>
+</section>
+
+<section class="story">
+  <h2>El tiempo juega en contra</h2>
+
+  <p>
+    Cuanto mayor es la antelación con la que se realiza una reserva,
+    mayor es la probabilidad de que se cancele.
+  </p>
+
+  <canvas id="leadChart"></canvas>
+</section>
+
+<section class="story">
+  <h2>El canal de reserva importa</h2>
+
+  <p>
+    Las reservas realizadas mediante agencias y turoperadores presentan una tasa
+    de cancelación mayor que las reservas directas.
+  </p>
+
+  <canvas id="channelChart"></canvas>
+</section>
+
+<section class="story">
+  <h2>El perfil del cliente también influye</h2>
+
+  <p>
+    Los clientes transitorios son los que más cancelan.
+    En cambio, las reservas de grupo presentan una tasa de cancelación mucho menor.
+  </p>
+
+  <canvas id="customerChart"></canvas>
+</section>
+
+<section class="conclusion">
+  <h2>Conclusión</h2>
+
+  <p>
+    Las cancelaciones hoteleras no son aleatorias. Siguen patrones claros:
+    son más frecuentes en hoteles urbanos, reservas con mucha antelación,
+    canales intermediados y clientes transitorios.
+  </p>
+
+  <p>
+    Los patrones observados sugieren que variables operativas y de comportamiento
+    podrían utilizarse para desarrollar modelos predictivos de cancelación.
+  </p>
+</section>
+
+<footer>
+  Proyecto de visualización narrativa desarrollado con HTML, CSS, JavaScript y Chart.js
+</footer>
+    <script src='https://cdn.jsdelivr.net/npm/chart.js'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>
